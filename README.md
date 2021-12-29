@@ -9,8 +9,9 @@ yamdb_final - проект реализации интерфейса api_yamdb, 
 + Python
 + Workflow
 
-![example workflow](https://github.com/dimdolino/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Автор:
 
 + Семёнов Дмитрий
+
+![example workflow](https://github.com/dimdolino/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
