@@ -1,26 +1,25 @@
 from django.contrib.auth.tokens import default_token_generator
 from django.db.models import Avg
-from django_filters.rest_framework import DjangoFilterBackend
 from django.shortcuts import get_object_or_404
-from rest_framework import (permissions, viewsets, status, filters, mixins)
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters, mixins, permissions, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
+from reviews.models import Category, Genre, Review, Title, User
 
-from reviews.models import Category, Genre, Title, User, Review
-from .permissions import (IsAdminOrSuperUser, IsAdminOrReadOnly,
-                          IsAdminOrModeratorOrAuthor,)
-from .pagination import TitlePagination
-from .serializers import (
-    CategorySerializer, GenreSerializer, SignUpSerializer,
-    TitleWriteSerializer, TitleReadSerializer, TokenSerializer, UserSerializer,
-    CommentSerializer, ReviewSerializer
-)
-from .send_code import send_code
 from .filtersets import TitleFilter
+from .pagination import TitlePagination
+from .permissions import (IsAdminOrModeratorOrAuthor, IsAdminOrReadOnly,
+                          IsAdminOrSuperUser)
+from .send_code import send_code
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer, SignUpSerializer,
+                          TitleReadSerializer, TitleWriteSerializer,
+                          TokenSerializer, UserSerializer)
 
 SINGUP_ERROR = 'данный {key} уже занят'
 CODE_ERROR = 'Неверный confirmation_code'

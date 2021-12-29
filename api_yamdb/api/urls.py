@@ -1,9 +1,8 @@
-from django.urls import path, include
+from django.urls import include, path
 from rest_framework import routers
 
-from .views import (
-    APISignup, APIToken, CategoryViewSet, GenreViewSet,
-    TitleViewSet, UserViewSet, CommentViewSet, ReviewViewSet)
+from .views import (APISignup, APIToken, CategoryViewSet, CommentViewSet,
+                    GenreViewSet, ReviewViewSet, TitleViewSet, UserViewSet)
 
 REVIEW_URL = r'titles/(?P<title_id>\d+)/reviews'
 COMMENT_URL = REVIEW_URL + r'/(?P<review_id>[\d]+)/comments'
