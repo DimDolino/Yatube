@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^#
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['51.250.28.166', 'localhost', 'dimdolino.co.vu']
 
 
 INSTALLED_APPS = [
