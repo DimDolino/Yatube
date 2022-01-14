@@ -30,12 +30,12 @@ DB_PORT=5432 # порт для подключения к БД
 
 1. Остановить службу nginx, если она запущена:
 
-```python
+```bash
  sudo systemctl stop nginx
 ```
 2. Выполнить установку docker.io:
 
-```python
+```bash
  sudo systemd stop nginx
 ```
 3. Выполнить установку docker-compose:
@@ -45,7 +45,7 @@ https://docs.docker.com/compose/install/
 
 5. Скопируйте также на удаленный сервер файл фикстур fixtures.json из yamdb_final/infra/:
 
-```python
+```bash
 csp fixtures.json username@server_id
 ```
 
@@ -53,30 +53,30 @@ csp fixtures.json username@server_id
 
 Выполнить миграции:
 
-```python
+```bash
 sudo docker-compose exec web python manage.py migrate
 ```
 Для создания суперпользователя выполнить команду:
 
-```python
+```bash
 sudo docker-compose exec web python manage.py createsuperuser
 ```
 Для сбора статики проекта выполнить:
 
-```python
+```bash
 sudo docker-compose exec web python manage.py collectstatic --no-input 
 ```
 ## Добавляем данные в контейнер:
 
 Скопировать данные в образ:
 
-```python
+```bash
 sudo docker cp fixtures.json <id_контейнера web>:/app
 ```
 
 
 Выполнить команду:
-```python
+```bash
 sudo docker-compose exec web python manage.py loaddata fixtures.json
 ```
 ### Автор:
