@@ -86,4 +86,4 @@ sudo docker-compose exec web python manage.py loaddata fixtures.json
 ![example workflow](https://github.com/dimdolino/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Ссылка на сайт:
-http://51.250.28.166`
+http://51.250.28.166
