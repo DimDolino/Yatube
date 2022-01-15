@@ -30,12 +30,12 @@ DB_PORT=5432 # порт для подключения к БД
 
 1. Остановить службу nginx, если она запущена:
 
-```bash
+```python
  sudo systemctl stop nginx
 ```
 2. Выполнить установку docker.io:
 
-```bash
+```python
  sudo systemd stop nginx
 ```
 3. Выполнить установку docker-compose:
@@ -45,7 +45,7 @@ https://docs.docker.com/compose/install/
 
 5. Скопируйте также на удаленный сервер файл фикстур fixtures.json из yamdb_final/infra/:
 
-```bash
+```python
 csp fixtures.json username@server_id
 ```
 
@@ -86,4 +86,4 @@ sudo docker-compose exec web python manage.py loaddata fixtures.json
 ![example workflow](https://github.com/dimdolino/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Ссылка на сайт:
-http://51.250.28.166
+http://51.250.28.166`
