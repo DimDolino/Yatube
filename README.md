@@ -2,12 +2,12 @@
 Yatube - проект реализации интерфейса api_yamdb, который  собирает отзывы пользователей на произведения, через Docker-Compose с использованием workflow, с деплоем на сервере
 
 ### Используемые технологии:
-
-+ Django,
-+ Django rest framework,
-+ Docker-Compose,
-+ Python
-+ Workflow
+<div>
+  <img src="https://img.shields.io/badge/Django-blue?logo=Django&logoColor=white&style=for-the-badge" title="Django" alt="Django"/>&nbsp;
+  <img src="https://img.shields.io/badge/Docker-blue?logo=Docker&logoColor=white&style=for-the-badge" title="Docker" alt="Docker"/>&nbsp;
+  <img src="https://img.shields.io/badge/Nginx-blue?logo=Nginx&logoColor=white&style=for-the-badge" title="Nginx" alt="Nginx"/>
+  <img src="https://img.shields.io/badge/Workflow-blue?&logoColor=white&style=for-the-badge" title="Workflow"  alt="Workflow"/>&nbsp;
+</div>
 
 ### Как запустить проект:
 
